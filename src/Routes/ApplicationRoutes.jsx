@@ -19,7 +19,7 @@ const ApplicationRoutes = () => {
             element={<pages.ScheduledViewings />}
           />
         </Route>
-        {/* project info */}
+        {/* layout view */}
         <Route path="/project-info" element={<pages.ProjectInfo />} />
       </Route>
     </Routes>

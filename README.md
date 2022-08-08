@@ -1,3 +1,20 @@
+
+# Rewards
+
+This project is developed using the following figma file:
+https://www.figma.com/file/xuB8cSHHUpnXPdD4qM0fLL/The-Rewards-Co-V2-(Copy)?node-id=601%3A1988
+
+We are attempting to build this project keeping in mind how we can copy different configurations depending upon different designs. That means that we are trying to make sure this project has almost all type of reusable structure
+
+for github: https://github.com/bhattiasad99/rewards_attempt
+
+## Routing with variable styles
+We have used a new type of routing where you have one type of routing with only navbar and another type of 
+routing with navbar and drawer.
+
+We used a separate nested route with empty param for routes with drawer and nav and for others without drawer we are not using a separate file
+# create react app guide
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
