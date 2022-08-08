@@ -1,3 +1,12 @@
+import rewardsLogo from "./../assets/the-rewards-co.png";
+
+const palette = {
+  primary: "#F1D29E",
+  text: "#121848",
+  textLight: "#141B49",
+  borderColor: "rgba(18, 24, 72, 0.15)",
+};
+
 const routes = [
   {
     label: "Dashboard",
@@ -21,8 +30,31 @@ const routes = [
   },
 ];
 
-const constants = () => {
-  routes;
+const theme = {
+  palette,
 };
 
-export default constants();
+const assets = {
+  rewardsLogo,
+};
+
+const textTemplates = {
+  projectName: "Rewards",
+};
+
+const nav = {
+  height: "72px",
+  paddingHorizontal: "96px",
+};
+
+const constants = {
+  routes,
+  theme,
+  assets,
+  textTemplates,
+  templates: {
+    nav,
+  },
+};
+
+export default constants;
