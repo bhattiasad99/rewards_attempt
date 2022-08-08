@@ -1,11 +1,37 @@
 import rewardsLogo from "./../assets/the-rewards-co.png";
 import navIcon from "./../assets/nav-icon.png";
+import Search from "../assets/icons/Search";
+
+const setup = {
+  global: {
+    logo: rewardsLogo,
+    navIcon,
+    companyName: "Rewards",
+  },
+
+  nav: {
+    height: "72px",
+    horizontalPadding: "6.6%",
+    hasSearch: true,
+    SearchIcon: <Search />,
+    links: [
+      { label: "Browse Catalogue", id: "browse-catalogue" },
+      { label: "About Us", id: "about-us" },
+      { label: "Partners", id: "partners" },
+    ],
+    gapBetweenLogoAndList: "7.7%",
+  },
+
+  colors: {
+    primary: "#F1D29E",
+    text: "#121848",
+    borderColor: "rgba(18, 24, 72, 0.15)",
+    textLight: "#141B49",
+  },
+};
 
 const palette = {
-  primary: "#F1D29E",
-  text: "#121848",
-  textLight: "#141B49",
-  borderColor: "rgba(18, 24, 72, 0.15)",
+  ...setup.colors,
 };
 
 const routes = [
@@ -41,12 +67,12 @@ const assets = {
 };
 
 const textTemplates = {
-  projectName: "Rewards",
+  projectName: setup.global.companyName,
 };
 
 const nav = {
-  height: "72px",
-  paddingHorizontal: "96px",
+  height: setup.nav.height,
+  paddingHorizontal: setup.nav.horizontalPadding,
 };
 
 const constants = {
@@ -57,6 +83,7 @@ const constants = {
   templates: {
     nav,
   },
+  setup,
 };
 
 export default constants;

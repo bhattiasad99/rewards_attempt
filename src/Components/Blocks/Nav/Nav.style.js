@@ -17,6 +17,16 @@ export const ToolbarHeightAdjust = styled.div`
   height: ${(props) => props.height};
 `;
 
+export const Links = styled.ul`
+  list-style: none;
+  flex-grow: 1;
+  display: flex;
+`;
+
+export const Link = styled.li``;
+
 export const IconImg = styled.img``;
 
-export const LogoImg = styled.img``;
+export const LogoImg = styled.img`
+  margin-right: 7.7%;
+`;

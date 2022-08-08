@@ -3,6 +3,8 @@ import {
   StyledNavContainer,
   ToolbarHeightAdjust,
   LogoImg,
+  Links,
+  Link,
   IconImg,
 } from "./Nav.style";
 import constants from "../../../config/constants";
@@ -15,6 +17,7 @@ const Nav = () => {
   const primaryColor = constants.theme.palette.primary;
   const horizontalPadding = constants.templates.nav.paddingHorizontal;
   const navIcon = constants.assets.navIcon;
+  const links = constants.setup.nav.links;
 
   return (
     <div>
@@ -24,6 +27,11 @@ const Nav = () => {
         horizontalPadding={horizontalPadding}
       >
         <LogoImg src={imgSrc} alt={`${projectName} logo`} />
+        <Links>
+          {links.map(({ label, id }) => (
+            <Link key={id}>{label}</Link>
+          ))}
+        </Links>
         <IconButton hasBorder={false}>
           <IconImg src={navIcon} width="100%" height="100%" alt="icon" />
         </IconButton>
