@@ -1,4 +1,5 @@
 import rewardsLogo from "./../assets/the-rewards-co.png";
+import navIcon from "./../assets/nav-icon.png";
 
 const palette = {
   primary: "#F1D29E",
@@ -36,6 +37,7 @@ const theme = {
 
 const assets = {
   rewardsLogo,
+  navIcon,
 };
 
 const textTemplates = {

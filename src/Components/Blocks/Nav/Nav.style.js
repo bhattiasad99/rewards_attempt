@@ -17,4 +17,6 @@ export const ToolbarHeightAdjust = styled.div`
   height: ${(props) => props.height};
 `;
 
+export const IconImg = styled.img``;
+
 export const LogoImg = styled.img``;
